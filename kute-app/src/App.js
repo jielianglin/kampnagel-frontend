@@ -1,0 +1,25 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./pages/Home";
+import Chat from "./pages/Chat";
+import Events from "./pages/Events";
+import Friends from "./pages/Friends";
+import Profile from "./pages/Profile";
+
+function App() {
+  return (
+    <div>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/chat" element={<Chat />} />
+          <Route exact path="/events" element={<Events />} />
+          <Route exact path="/friends" element={<Friends />} />
+          <Route exact path="/profile" element={<Profile />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
