@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
+import ResponsiveAppBar from "./components/Nav-bar";
 import Chat from "./pages/Chat";
 import Events from "./pages/Events";
 import Friends from "./pages/Friends";
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <Router>
+        <ResponsiveAppBar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/chat" element={<Chat />} />
