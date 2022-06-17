@@ -1,3 +1,30 @@
 .sidebar {
     float: right;
+    background-color: #F3FD46;
+    height: 100%;
+    writing-mode: vertical-rl;
+}
+
+/* .sidebarCollapsed {
+    display: inline
+} */
+
+.sidebarButton {
+    border: none;
+    background-color: transparent;
+}
+
+.sidebarLabel {
+    font-size: 40px;
+    position: relative;
+    top: 250px;
+
+}
+
+.listings {
+    writing-mode: horizontal-tb;
+}
+
+.list {
+    list-style-type: none;
 }
