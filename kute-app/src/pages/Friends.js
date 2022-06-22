@@ -1,9 +1,11 @@
 import React from "react";
+import Grid from "../components/friends/Friends-grid";
+import "./Friends.css";
 
 export default function Friends() {
     return (
-        <div>
-            This is the Friends page.
+        <div className="grid">
+            <Grid />
         </div>
     )
 }
