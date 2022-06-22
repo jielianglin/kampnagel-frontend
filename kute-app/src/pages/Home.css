@@ -1,0 +1,9 @@
+/* .sidebar {
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+} */
+
+.home-buttons {
+    float: left;
+}

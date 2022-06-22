@@ -13,6 +13,9 @@ import "./App.css";
 function App() {
   return (
     <div>
+      <div className="sidebar">
+        <Sidebar />
+      </div>
       <div className="router">
         <Router>
           <ResponsiveAppBar />
@@ -25,9 +28,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-      <div className="sidebar">
-        <Sidebar />
-      </div>
+
     </div>
   );
 }
