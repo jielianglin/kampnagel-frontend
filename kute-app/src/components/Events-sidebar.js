@@ -19,7 +19,7 @@ export default function Sidebar() {
 
     return (
         <ProSidebar className="sidebar" width="800px" collapsedWidth="70px" collapsed={events} rtl="false" >
-            <div classname="sidebarCollapsed">
+            <div className="sidebarCollapsed">
                 <button className="sidebarButton" onClick={openSidebar}> {expand ? <ArrowForwardIosIcon /> : <ArrowBackIosIcon />}</button>
                 <span className="sidebarLabel">Kampnagel Events</span>
                 <br />
