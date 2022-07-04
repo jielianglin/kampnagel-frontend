@@ -2,6 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import ChatCard from "./Chat-card";
 import "react-multi-carousel/lib/styles.css";
+import Chip from '@mui/material/Chip';
+import "./Chat-carousel.css";
 
 const responsive = {
     superLargeDesktop: {
@@ -26,14 +28,17 @@ const responsive = {
 export default function ChatCarousel() {
 
     return (
-        <Carousel
-            slidesToSlide={3}
-            responsive={responsive}
-        >
-            <div><ChatCard /></div>
-            <div><ChatCard /></div>
-            <div><ChatCard /></div>
-            <div><ChatCard /></div>
+        <div>
+            <div className="chat-carousel-header"><Chip label="Chat with a Buddy" variant="outlined" style={{ backgroundColor: '#FFFFFF' }} /></div>
+            <Carousel
+                slidesToSlide={3}
+                responsive={responsive}
+            >
+                <div><ChatCard /></div>
+                <div><ChatCard /></div>
+                <div><ChatCard /></div>
+                <div><ChatCard /></div>
 
-        </Carousel>);
+            </Carousel>
+        </div>);
 }

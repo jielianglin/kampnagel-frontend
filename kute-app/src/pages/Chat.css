@@ -1,20 +1,44 @@
+.chat-ui-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -250px;
+}
+
+.chat-interface {
+    padding: 100px;
+}
+
 .chat-top {
     display: inline;
 }
 
 .chat-side {
-    border: 1px solid black;
+    position: relative;
+    top: 47px;
     padding: 10px 0px 0px 10px;
+    border: 1px solid black;
+    border-style: dashed;
+    border-bottom: 0px;
+    border-right: 0px;
 }
 
 .invites-side {
+    position: relative;
+    top: 80px;
+    padding: 10px 0px 0px 10px;
     border: 1px solid black;
-    padding: 8px;
+    border-style: dashed;
+    border-right: 0px;
+    border-bottom: 0px;
 }
 
 .chat-carousel {
+    position: relative;
     border: 1px solid black;
-    padding: 12px;
+    border-bottom: 0px;
+    border-style: dashed;
+    padding: 24px 16px 16px 16px;
 }
 
 .invite-avatar {
@@ -24,5 +48,7 @@
 
 .invites-carousel {
     border: 1px solid black;
-    padding: 12px;
+    border-bottom: 0px;
+    border-style: dashed;
+    padding: 24px 12px 12px 12px;
 }

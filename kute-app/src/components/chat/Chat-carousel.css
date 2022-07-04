@@ -1,0 +1,7 @@
+.chat-carousel-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+
+}

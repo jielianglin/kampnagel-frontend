@@ -1,9 +1,8 @@
-.chat-interface {
-    padding: 100px 100px 100px 100px;
-}
-
-.chatbox {
-    border: 2px solid black;
+.chat-box {
+    /* margin: 100px 100px 100px 100px;
+    padding-top: 30px; */
+    border: 1px solid black;
+    border-style: dashed;
 }
 
 .messages {
@@ -36,4 +35,9 @@
 .submit-button {
     float: right;
     padding: 10px;
+}
+
+.horizontal-line {
+    border-top: 0px solid black;
+    border-style: dashed;
 }

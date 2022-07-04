@@ -1,0 +1,20 @@
+.profile-form-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -48px;
+    z-index: 2;
+}
+
+.header-chip {
+    background-color: white;
+}
+
+.profile-form {
+    margin: 100px 100px 100px 100px;
+    padding: 30px 30px 30px 30px;
+    border: 2px solid black;
+    border-style: dashed;
+    position: static;
+    z-index: 1;
+}

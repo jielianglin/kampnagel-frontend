@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Profile-form.css';
 
 //accordian imports
 import Accordion from '@mui/material/Accordion';
@@ -6,12 +7,13 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import Chip from "@mui/material/Chip";
 //textfield import
 import TextField from '@mui/material/TextField';
 
 //chips array import
 import Chips from "./Chips";
+
 
 export default function SimpleAccordion() {
 
@@ -23,7 +25,8 @@ export default function SimpleAccordion() {
     };
 
     return (
-        <div>
+        <div className="profile-form">
+            <div className="profile-form-header"><Chip label="Make a Profile" variant="outlined" style={{ backgroundColor: '#FFFFFF' }} /></div>
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
