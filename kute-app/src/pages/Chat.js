@@ -5,7 +5,7 @@ import Chatbox from "../components/chat/Chatbox";
 import InvitesCarousel from "../components/chat/Invites-carousel";
 import InvitesSide from "../components/chat/Invites-side";
 import ChatSide from "../components/chat/Chat-side";
-import Chip from '@mui/material/Chip';
+
 import "./Chat.css";
 
 export default function Chat() {
@@ -33,7 +33,7 @@ export default function Chat() {
                             </Grid>
 
                             <Grid lg={11}>
-                                <div className="chat-ui-header"><Chip label="Chat with a Buddy" variant="outlined" style={{ backgroundColor: '#FFFFFF' }} /></div>
+                                
                                 <div className="chat-carousel">
                                     <ChatCarousel />
                                 </div>

@@ -5,7 +5,7 @@ import Chip from '@mui/material/Chip';
 export default function ChatBox() {
     return (
         <div>
-
+            <div className="chat-ui-header"><Chip label="Chat with a Buddy" variant="outlined" style={{ backgroundColor: '#FFFFFF' }} /></div>
 
             <div className="chat-box">
 
