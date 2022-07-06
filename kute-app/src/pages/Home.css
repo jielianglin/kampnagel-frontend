@@ -4,6 +4,45 @@
     left: 0px;
 } */
 
+.sample-page-grid {
+    margin: 50px;
+}
+
+.sample-page-card {
+    width: 150px;
+    height: 300px;
+    /* display: flex;
+    justify-content: center; */
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.sample-avatar {
+    border-radius: 180px;
+    width: 150px;
+    height: 150px;
+}
+
+.sample-interests-lists {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.welcome {
+    margin-left: 100px;
+}
+
+.kute {
+    color: yellow;
+    background-color: black;
+    width: 110px;
+    padding: 4px;
+}
+
 .home-buttons {
-    float: left;
+    float: right;
 }
