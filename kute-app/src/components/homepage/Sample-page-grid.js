@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 // import sampleAvatar from "../pictures/sampleAvatar.png";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import "./Friends-grid.css";
+import "./Sample-page-grid.css";
 
 const imgsLinks = [
     "https://loremflickr.com/320/240?random=1",
@@ -58,15 +58,15 @@ export default function BuddiesProfileCard() {
                                     <Typography variant="body2" color="text.secondary">
                                         <ul className="buddies-interests-lists">
                                             <li>
-                                                Interest 1
+                                                purring
                                             </li>
 
                                             <li>
-                                                Interest 2
+                                                hunting mice
                                             </li>
 
                                             <li>
-                                                Interest 3
+                                                being lazy
                                             </li>
                                         </ul>
                                     </Typography>

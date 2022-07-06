@@ -5,6 +5,7 @@ import Chatbox from "../components/chat/Chatbox";
 import InvitesCarousel from "../components/chat/Invites-carousel";
 import InvitesSide from "../components/chat/Invites-side";
 import ChatSide from "../components/chat/Chat-side";
+import ResponsiveAppBar from "../components/navigation/Nav-bar";
 
 import "./Chat.css";
 
@@ -17,7 +18,7 @@ export default function Chat() {
 
     return (
         <div>
-
+            <ResponsiveAppBar />
             <div className="chat-interface">
 
                 {viewChatCarousel ?
@@ -33,7 +34,7 @@ export default function Chat() {
                             </Grid>
 
                             <Grid lg={11}>
-                                
+
                                 <div className="chat-carousel">
                                     <ChatCarousel />
                                 </div>
