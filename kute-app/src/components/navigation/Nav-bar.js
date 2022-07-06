@@ -123,11 +123,11 @@ const ResponsiveAppBar = () => {
                                 Friends
                             </Link>
                         </div>
-                        <div className="link">
+                        {/* <div className="link">
                             <Link href="/events" onClick={handleCloseNavMenu}>
                                 Events
                             </Link>
-                        </div>
+                        </div> */}
                         <div className="link">
                             <Link href="/chat" onClick={handleCloseNavMenu}>
                                 Chat
