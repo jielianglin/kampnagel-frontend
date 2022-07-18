@@ -1,29 +1,114 @@
 .sidebar {
-    background-color: #F3FD46;
+
     height: 100%;
-    writing-mode: vertical-rl;
+    background-color: #F3FD46
 }
 
-/* .sidebarCollapsed {
-    display: inline
-} */
+.sidebar-collapsed-view {
+    width: 80px;
+    height: 100%;
+    padding: 10px;
+    background-color: #F3FD46;
+}
 
-.sidebarButton {
+.sidebar-button-collapsed {
     border: none;
     background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 24px;
 }
 
-.sidebarLabel {
+
+.sidebar-label-collapsed {
     font-size: 40px;
-    position: relative;
-    top: 250px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    bottom: 24px;
+    right: 5px;
 
 }
 
-.listings {
-    writing-mode: horizontal-tb;
+.sidebar-expanded {
+    padding: 10px;
 }
 
-.list {
-    list-style-type: none;
+.sidebar-button-expanded {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    border: none;
+    background-color: transparent;
+    float: left;
+}
+
+.sidebar-label-expanded {
+    font-size: 40px;
+    writing-mode: vertical-rl;
+    float: left;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.listings-row {
+    padding: 100px
+}
+
+.event {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.grid-container {
+    position: absolute;
+    top: 50%;
+    max-width: 600px;
+    border: 2px solid black;
+    float: right;
+}
+
+.toggle-buttons {
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    right: 0px;
+}
+
+.list-by-alphabet {
+    background-color: transparent;
+    border: none;
+    font-size: 8px;
+    padding: 16px;
+}
+
+.list-by-date {
+    background-color: transparent;
+    border: none;
+    font-size: 8px;
+    padding: 16px;
+}
+
+.search-container {
+    padding: 32px;
+    /* float: right; */
+}
+
+.search {
+    background-color: white;
+    width: 100%;
+    /* position: absolute;
+    float: right; */
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-expanded-content {
+    top: -10px;
+    width: 815px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    background-color: #FBFDBE;
+    height: 100%;
 }
