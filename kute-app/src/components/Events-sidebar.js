@@ -10,14 +10,262 @@ import './Events-sidebar.css';
 
 export default function Sidebar() {
     const [events, showEvents] = React.useState(true);
-    const [expand, collapse] = React.useState(true);
-    const [list, setList] = React.useState(false);
+    const [expand, collapse] = React.useState(false);
     const [listByDate, listByAlphabet] = React.useState(true);
 
+    const ListingsRowByDate = () => {
+        return (
+
+            <Grid className="grid-container" container >
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+            </Grid>
+
+        );
+    }
+
+    const ListingsRowByABC = () => {
+        return (
+            <Grid className="grid-container" container >
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+                <Grid xs={2}>
+                    <div className="event">event</div>
+                </Grid>
+                <Grid xs={6}>
+                    <div className="event">date</div>
+                </Grid>
+                <Grid xs={4}>
+                    <div className="event">artist</div>
+                </Grid>
+            </Grid>
+
+        );
+    }
     const openSidebar = () => {
         showEvents(!events);
         collapse(!expand);
-        setList(!list);
     }
 
     const toggleGrid = () => {
@@ -26,7 +274,8 @@ export default function Sidebar() {
 
     return (
         <ProSidebar className="sidebar" width="900px" collapsedWidth="72px" collapsed={events}>
-            {list ?
+
+            {expand ?
                 <div className="sidebar-expanded">
                     <div className="sidebar-collapsed-view">
                         <button className="sidebar-button-expanded" onClick={openSidebar}> {expand ? <ArrowBackIosIcon /> : <ArrowForwardIosIcon />}</button>
@@ -60,38 +309,17 @@ export default function Sidebar() {
                         </div>
 
                         <br />
-
-                        {listByDate ?
-                            <div className="listings-row">
-                                <Grid className="grid-container" container >
-                                    <Grid xs={2}>
-                                        <div className="event">date</div>
-                                    </Grid>
-                                    <Grid xs={6}>
-                                        <div className="event">event</div>
-                                    </Grid>
-                                    <Grid xs={4}>
-                                        <div className="event">artist</div>
-                                    </Grid>
-                                </Grid>
-                            </div>
-                            :
-                            <div className="listings-row">
-                                <Grid className="grid-container" container >
-                                    <Grid xs={2}>
-                                        <div className="event">event</div>
-                                    </Grid>
-                                    <Grid xs={6}>
-                                        <div className="event">date</div>
-                                    </Grid>
-                                    <Grid xs={4}>
-                                        <div className="event">artist</div>
-                                    </Grid>
-                                </Grid>
-                            </div>
-                        }
-                    </div>
-                    <div>
+                        <div className="kampnagel-events">
+                            {listByDate ?
+                                <div className="listings-row">
+                                    <ListingsRowByDate />
+                                </div>
+                                :
+                                <div className="listings-row">
+                                    <ListingsRowByABC />
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
                 :
@@ -100,10 +328,7 @@ export default function Sidebar() {
                     <span className="sidebar-label-collapsed">Kampnagel Events</span>
                     <br />
                 </div>
-
-
             }
-
         </ProSidebar >
     )
 

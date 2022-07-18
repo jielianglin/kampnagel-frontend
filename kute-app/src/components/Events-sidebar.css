@@ -1,5 +1,4 @@
 .sidebar {
-
     height: 100%;
     background-color: #F3FD46
 }
@@ -52,7 +51,8 @@
 }
 
 .listings-row {
-    padding: 100px
+    padding: 100px;
+
 }
 
 .event {
@@ -64,8 +64,9 @@
     position: absolute;
     top: 50%;
     max-width: 600px;
-    border: 2px solid black;
     float: right;
+    height: 350px;
+    overflow: auto;
 }
 
 .toggle-buttons {
