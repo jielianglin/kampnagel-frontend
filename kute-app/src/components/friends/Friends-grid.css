@@ -1,24 +1,29 @@
-
-.card {
+.collapsed-card {
     width: 150px;
     height: 300px;
-    /* display: flex;
-    justify-content: center; */
     margin: 30px;
     padding: 10px;
     border: 2px solid black;
 }
 
 .buddies-username {
-    text-align: center
+    text-align: center;
 }
 
 .buddies-gender {
-    text-align: center
+    text-align: center;
 }
 
-.avatar {
+.avatar-container-collapsed {
+    display: flex;
+    justify-content: center;
+    border-radius: 360px;
+}
+
+.avatar-container-expanded {
     border-radius: 180px;
+    position: relative;
+    top: 60px;
 }
 
 .buddies-interests-lists {
@@ -26,5 +31,70 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
 
+.expanded-card {
+    width: 320px;
+    border: 1px solid black;
+    padding: 32px;
+    margin: 32px;
+}
+
+.expanded-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.username {
+    background-color: pink;
+    padding: 8px;
+}
+
+.gender {
+    padding: 8px;
+}
+
+.age {
+    padding: 8px;
+}
+
+.intro {
+    display: block;
+    float: right;
+    border: 2px solid pink;
+    padding: 20px;
+    border-radius: 15px;
+    /* margin: 15px; */
+    max-width: 150px;
+    position: relative;
+    top: -120px;
+}
+
+.connect-button-container {
+    position: relative;
+    top: -32px;
+    left: 160px;
+}
+
+.connect-button {
+    background-color: pink;
+    padding: 40px;
+    border-radius: 60px;
+    border: none;
+}
+
+.expanded-scroll-group {
+    height: 150px;
+    overflow: auto;
+    padding: 24px;
+}
+
+.friends-scroll-category {
+    display: flex;
+    justify-content: center;
+
+}
+
+.expanded-scrollgroup {
+    padding: 40px;
 }
