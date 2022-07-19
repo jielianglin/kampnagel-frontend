@@ -8,7 +8,6 @@ import Collapse from '@mui/material/Collapse';
 
 import "./Friends-grid.css";
 
-var index;
 
 const imgsLinks = [
     "https://loremflickr.com/320/240?random=1",
@@ -31,12 +30,12 @@ export default function BuddiesProfileCard() {
     const [collapsed, showCollapsed] = React.useState(true);
 
 
-    const images = imgsLinks.map((link) => {
+    const images = imgsLinks.map((link, index) => {
 
         return (
             <LazyLoadImage
                 alt="img"
-                key={link}
+                key={index}
                 src={link}
                 height="150px"
                 width="150px"
@@ -50,29 +49,31 @@ export default function BuddiesProfileCard() {
     );
 
 
-    const expandCard = () => {
-        console.log("clicked");
-        console.log(index);
+    const expandCard = (event, key) => {
+        console.log(event.target);
+        console.log('key index:', key);
         showExpanded(!expanded);
         showCollapsed(!collapsed);
     }
 
-    return (
-        <div className="row">
-            <Box sx={{ width: '100%' }}>
-                <Grid container rowSpacing={6} columnSpacing={{ xs: 6, sm: 8, md: 10 }}>
-                    {images.map((image, index) =>
 
+
+    return (
+
+        <div className="row">
+
+            <Box sx={{ width: '100%' }}>
+                <Grid container rowSpacing={6} columnSpacing={{ xs: 6, sm: 8, md: 12 }}>
+                    {images.map((image, key) =>
                         <div>
 
                             <Grid item xs={3}>
-
                                 {collapsed &&
                                     <div className="collapsed-card">
                                         <Typography variant="h5"> <div className="buddies-username">Name</div> </Typography>
                                         <Typography variant="body2" color="text.secondary" className="buddies-gender"> <div>Gender</div> </Typography>
                                         <br />
-                                        <div className="avatar-container-collapsed" onClick={expandCard} key={index}>
+                                        <div className="avatar-container-collapsed" onClick={event => expandCard(event, key)} key={key}>
                                             {image}
                                         </div>
                                         <br />
@@ -93,62 +94,66 @@ export default function BuddiesProfileCard() {
                                         </Typography>
                                     </div >
                                 }
-                                {expanded &&
-                                    <div className="expanded-card">
-                                        <Collapse in={expanded} timeout="auto" unmountOnExit>
-                                            <Box>
-                                                <section>
-                                                    <div className="expanded-header">
-                                                        <div className="username">
-                                                            Paloma
-                                                        </div>
-                                                        <div className="gender">
-                                                            she/her
-                                                        </div>
-                                                        <div className="age">
-                                                            Age: 36
-                                                        </div>
-                                                    </div>
-                                                    <div className="avatar-container-expanded" onClick={expandCard} key={index}
-                                                    >
-                                                        {image}
-                                                    </div>
-                                                    <div className="intro"> <Typography>Tickle my curiosity!</Typography></div>
-                                                    <br />
-                                                    <div className="connect-button-container"> <button className="connect-button"> CONNECT</button></div>
-                                                </section>
-                                                <section className="expanded-scroll-group">
 
-                                                    <div className="friends-scroll-category">
-                                                        <Typography>INTERESTS</Typography>
+                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                    <div className="expanded-card">
+                                        <Box>
+                                            <section>
+                                                <div className="expanded-header">
+                                                    <div className="username">
+                                                        Paloma
                                                     </div>
-                                                    <div>
-                                                        <Chips />
+                                                    <div className="gender">
+                                                        she/her
                                                     </div>
-                                                    <br />
-                                                    <div className="friends-scroll-category">
-                                                        <Typography>EVENTS</Typography>
+                                                    <div className="age">
+                                                        Age: 36
                                                     </div>
-                                                    <div>
-                                                        <Chips />
-                                                    </div>
-                                                    <br />
-                                                    <div className="friends-scroll-category">
-                                                        <Typography>WHY I'M HERE</Typography>
-                                                    </div>
-                                                    <div>
-                                                        <Chips />
-                                                    </div>
-                                                </section>
-                                            </Box>
-                                        </Collapse>
+                                                </div>
+
+                                                <div className="avatar-container-expanded" onClick={event => expandCard(event, key)} key={key} >
+                                                    {image}
+                                                </div>
+
+                                                <div className="intro"> <Typography>Tickle my curiosity!</Typography></div>
+                                                <br />
+                                                <div className="connect-button-container"> <button className="connect-button"> CONNECT</button></div>
+                                            </section>
+                                            <section className="expanded-scroll-group">
+
+                                                <div className="friends-scroll-category">
+                                                    <Typography>INTERESTS</Typography>
+                                                </div>
+                                                <div>
+                                                    <Chips />
+                                                </div>
+                                                <br />
+                                                <div className="friends-scroll-category">
+                                                    <Typography>EVENTS</Typography>
+                                                </div>
+                                                <div>
+                                                    <Chips />
+                                                </div>
+                                                <br />
+                                                <div className="friends-scroll-category">
+                                                    <Typography>WHY I'M HERE</Typography>
+                                                </div>
+                                                <div>
+                                                    <Chips />
+                                                </div>
+                                            </section>
+
+                                        </Box>
                                     </div>
-                                }
+                                </Collapse>
+
                             </Grid>
+
                         </div>
                     )}
                 </Grid>
             </Box>
+
         </div>
 
     )
